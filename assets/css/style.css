@@ -19,6 +19,15 @@ body{
     border-radius: 10px;
 }
 
+.header {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    border: 5px solid #777777;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
 .timer {
     width: 50%;
     margin: 0 auto;
