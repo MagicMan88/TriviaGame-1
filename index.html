@@ -10,15 +10,19 @@
 </head>
 <body>
     <!-- Header/NavBar -->
+    <div class="container">
     <header id="mast-head">
-        <div class="container">
-            <h1 id="trivia">Trivia Game</h1>
+        <div class="head-container">
+            <h1 id="trivia">Harry Potter Trivia Game</h1>
         </div>
+    </div>
+    <br>
+    <section class="timer">
+        <div id="time-left"> <h3>Time Remaining</h3></div>
+        <div id="timer">Put timer here</div>
+    </section>
     <br>
     </header>
-            <!-- Displays Time Remaining -->
-            <div id="time-left"> <h3>Time Remaining!!</h3></div>
-            <br>
             <!-- Question Section -->
             <section id="main-section">
                 <form>
@@ -104,7 +108,9 @@
                         <input type="radio" name="optradio">Voldemort
                     </label>
                 </form>
+                <input type="button" value="Submit" id="button">
             </section>
+        </div>
         
   
 
