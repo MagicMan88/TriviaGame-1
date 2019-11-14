@@ -68,10 +68,10 @@ $("#submit-btn").on("click", function onSubmit() {
       }
     }
 
-    // Append results to html
+    // Add results to html
     var results = $("#results")
     results.text("<h2> You messed up </h2>")
-    alert("You scored " + score + " out of " numOfQuestions)
+    alert("You scored " + score + " out of " (numOfQuestions)
   }
 })
 
