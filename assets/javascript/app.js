@@ -57,7 +57,7 @@ setTimeout(timeUp, 1000 * 60);
 // Create Functions
 // ============================================
 // Start countdown on load
-window.onload = function () {
+var startGame = $("#start-btn").on("click",  function () {
   var seconds = 60;
   var intervalId;
   var correct;
@@ -93,7 +93,7 @@ window.onload = function () {
   }
 
  
-};
+});
 
 // Main Processes 
 // ============================================
