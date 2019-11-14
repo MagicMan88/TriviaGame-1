@@ -17,8 +17,10 @@
             <div class="head-container">
                 <h1 id="trivia">Harry Potter Trivia Game</h1>
                 <input type="button" value="Start" id="start-btn">
+                <div class="results">
+                    <h2>You scored: Not yet attempted</h2>
+                </div>
             </div>
-
         </header>
     </div>
     <!-- Countdown -->
@@ -33,108 +35,54 @@
     <br>
     <!-- Question Section -->
     <section id="main-section">
-        <form>
-            <p>Who is Harry Potter's Godfather?</p>
-            <label class="radio-inline">
-                <input type="radio" name="optradio" checked class="godfather">Severus Snape
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="optradio">Sirius Black
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="optradio">Remus Lupin
-            </label>
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="optradio">Albus Dumbledore
-            </label>
-        </form>
-        <br>
-        <form>
-            <p>What is the name of the elf that saves Harry's life?</p>
-            <label class="radio-inline">
-                <input type="radio" name="optradio" checked>Winky
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="optradio">Dobby
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="optradio">Kreacher
-            </label>
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="optradio">Hedwig
-            </label>
-        </form>
-        <br>
-        <form>
-            <p>How many Weasley children are there?</p>
-            <label class="radio-inline">
-                <input type="radio" name="optradio" checked>8
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="optradio">7
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="optradio">6
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="optradio">9
-            </label>
-        </form>
-        <br>
-        <form>
-            <p>What is the message written on the snitch Dumbledore gave to Harry?</p>
-            <label class="radio-inline">
-                <input type="radio" name="optradio" checked>"I open at the close."
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="optradio">"With great power comes great responsibility"
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="optradio">"Death is but the next great adventure."
-            </label>
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="optradio">"I solemnly swear that I am up to no good."
-            </label>
-        </form>
-        <br>
-        <form>
-            <p>What is the name of the dark wizard Harry must defeat?</p>
-            <label class="radio-inline">
-                <input type="radio" name="optradio" checked>Grindelwald
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="optradio">Draco Malfoy
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="optradio">Sirius Black
-            </label>
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="optradio">Voldemort
-            </label>
-        </form>
-        <input type="button" value="Submit" id="button">
-    </section>
-    <!-- Score Section -->
-    <section id="score">
-        <p>Here's your score</p>
-        <p id="correct">Correct Answers: 0</p>
-        <p id="incorrect">Wrong Answers: 0</p>
-    </section>
-    </div>
+        <form name="quiz" onsubmit="return onSubmit()">
+            <div class="question">
+                <h1>Who is Harry Potter's Godfather?</h1><br>
+                <input type="radio" name="q1" value="a">a. Severus Snape
+                <input type="radio" name="q1" value="b">b. Sirius Black
+                <input type="radio" name="q1" value="c">c. Remus Lupin
+                <input type="radio" name="q1" value="d">d. Albus Dumbledore
+            </div>
+            <br>
+            <div class="question">
+                <h1>What is the name of the elf that saves Harry's life?</h1><br>
+                <input type="radio" name="q2" value="a">a. Winky
+                <input type="radio" name="q2" value="b">b. Dobby
+                <input type="radio" name="q2" value="c">c. Kreacher
+                <input type="radio" name="q2" value="d">d. Hedwig
+            </div>
+            <br>
+            <div class="question">
+                <h1>How many Weasley children are there?</h1><br>
+                <input type="radio" name="q3" value="a">a. 8
+                <input type="radio" name="q3" value="b">b. 7
+                <input type="radio" name="q3" value="c">c. 6
+                <input type="radio" name="q3" value="d">d. 9
+            </div>
+            <br>
+            <div class="question">
+                <h1>What is the message written on the snitch Dumbledore gave to Harry?</h1><br>
+                <input type="radio" name="q4" value="a">a. I open at the close.
+                <input type="radio" name="q4" value="b">b. With great power comes great responsibility
+                <input type="radio" name="q4" value="c">c. Death is but the next great adventure.
+                <input type="radio" name="q4" value="d">d. I solemnly swear that I am up to no good.
+            </div>
+            <br>
+            <div class="question">
+                <h1>What is the name of the dark wizard Harry must defeat?</h1><br>
+                <input type="radio" name="q5" value="a">a. Grindelwald
+                <input type="radio" name="q5" value="b">b. Draco Malfoy
+                <input type="radio" name="q5" value="c">c. Sirius Black
+                <input type="radio" name="q5" value="d">d. Voldemort
+            </div>
+            <button type="submit" id="submit-btn">Submit Quiz</button>
 
 
 
 
 
 
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="assets\javascript\app.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="assets\javascript\app.js"></script>
 </body>
-
 </html>
