@@ -15,33 +15,33 @@ var myQuestions = [{
   divClass: ".godfather"
 },]
 var myQuestions = [{
-  ques: "Who is Harry Potter's Godfather?",
-  ans: ["Severus Snape", "Sirius Black", "Remus Lupin", "Albus Dumbledore"],
-  name: "godfather",
-  correct: "Sirius Black",
-  divClass: ".godfather"
+  ques: "What is the name of the elf that saves Harry's life?",
+  ans: ["Winky", "Dobby", "Kreacher", "Hedwig"],
+  name: "elf",
+  correct: "Dobby",
+  divClass: ".elf"
 },]
 var myQuestions = [{
-  ques: "Who is Harry Potter's Godfather?",
-  ans: ["Severus Snape", "Sirius Black", "Remus Lupin", "Albus Dumbledore"],
-  name: "godfather",
-  correct: "Sirius Black",
-  divClass: ".godfather"
+  ques: "How many Weasley children are there?",
+  ans: [8, 7, 6, 9],
+  name: "weasley",
+  correct: 7,
+  divClass: ".weasley"
 },]
 var myQuestions = [{
-  ques: "Who is Harry Potter's Godfather?",
-  ans: ["Severus Snape", "Sirius Black", "Remus Lupin", "Albus Dumbledore"],
-  name: "godfather",
-  correct: "Sirius Black",
-  divClass: ".godfather"
+  ques: "What is the message written on the snitch Dumbledore gave to Harry?",
+  ans: ["I open at the close.", "With great power comes great responsibility", "Death is but the next great adventure.", "I solemnly swear that I am up to no good."],
+  name: "snitch",
+  correct: "I open at the close.",
+  divClass: ".snitch"
 },]
 var myQuestions = [{
-  ques: "Who is Harry Potter's Godfather?",
-  ans: ["Severus Snape", "Sirius Black", "Remus Lupin", "Albus Dumbledore"],
-  name: "godfather",
-  correct: "Sirius Black",
-  divClass: ".godfather"
-},]
+  ques: "What is the name of the dark wizard Harry must defeat?",
+  ans: ["Grindelwald", "Draco Malfoy", "Sirius Black", "Voldemort"],
+  name: "wizard",
+  correct: "Voldemort",
+  divClass: ".wizard"
+},] // end the object.
 
 var myAnswer = [""]
 
