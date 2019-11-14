@@ -2,8 +2,6 @@
 // ============================================
 var seconds = 60;
 var intervalId;
-var correct;
-var inCorrect;
 var timeUp;
 
 //
@@ -15,11 +13,7 @@ var timeUp;
   var startGame = $("#start-btn").on("click", function () {
   var seconds = 60;
   var intervalId;
-  var correct;
-  var inCorrect;
   var timeUp;
-  var myQuestions = []
-  var myAnswer = [""]
 
   setTimeout(timeUp, 1000 * 60);
 
@@ -61,6 +55,24 @@ $("#submit-btn").on("click", function onSubmit() {
   var q1 = document.forms['quiz']['q1'].value;
   var q1 = document.forms['quiz']['q1'].value;
   var q1 = document.forms['quiz']['q1'].value;
+
+  // Loop through answers
+  for (var i = 1; i <= numOfQuestions; i++){
+    if(eval('q' + i) == '') {
+      alert("You messed up question " + i);
+    }
+
+    for (var i = 1; i <= numOfQuestions; i++){
+      if(eval('q' + i) == answerArray[i - 1]) {
+        score++;
+      }
+    }
+
+    // Append results to html
+    var results = $("#results")
+    results.text("<h2> You messed up </h2>")
+    alert("You scored " + score + " out of " numOfQuestions)
+  }
 })
 
 
