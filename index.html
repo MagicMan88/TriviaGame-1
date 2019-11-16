@@ -1,88 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
+​
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Trivia Game</title>
+  <meta charset="UTF-8">
+  <title>Totally Trivial Trivia</title>
+  <!-- CSS Reset Sheet -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">  ​
+  <!-- Our own CSS Sheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+   <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Geo" rel="stylesheet" type="text/css">
+  ​
 </head>
+​
 
 <body>
-    <div class="header">
-        <!-- Header/NavBar -->
-        <header id="mast-head">
-            <div class="head-container">
-                <h1 id="trivia">Harry Potter Trivia Game</h1>
-                <input type="button" value="Start" id="start-btn">
-                <div id="results">
-                    <h2>You scored: Not yet attempted</h2>
-                </div>
-            </div>
-        </header>
+  ​
+  <div id="wrapper">
+    <h1>Harry Potter Trivia!</h1>
+    <div id="sub-wrapper">
+      <div id="quiz">
+        <button id="start">Start</button>
+      </div>
     </div>
-    <!-- Countdown -->
-    <br>
-    <section class="timer">
-        <h3>Time Remaining</h3>
-        <br>
-        <div id="time-left">
-            <h3> 60 </h3>
-        </div>
-    </section>
-    <br>
-    <!-- Question Section -->
-    <section id="main-section">
-        <form name="quiz" onsubmit="return onSubmit()">
-            <div class="question">
-                <h1>Who is Harry Potter's Godfather?</h1><br>
-                <input type="radio" name="q1" value="a">a. Severus Snape
-                <input type="radio" name="q1" value="b">b. Sirius Black
-                <input type="radio" name="q1" value="c">c. Remus Lupin
-                <input type="radio" name="q1" value="d">d. Albus Dumbledore
-            </div>
-            <br>
-            <div class="question">
-                <h1>What is the name of the elf that saves Harry's life?</h1><br>
-                <input type="radio" name="q2" value="a">a. Winky
-                <input type="radio" name="q2" value="b">b. Dobby
-                <input type="radio" name="q2" value="c">c. Kreacher
-                <input type="radio" name="q2" value="d">d. Hedwig
-            </div>
-            <br>
-            <div class="question">
-                <h1>How many Weasley children are there?</h1><br>
-                <input type="radio" name="q3" value="a">a. 8
-                <input type="radio" name="q3" value="b">b. 7
-                <input type="radio" name="q3" value="c">c. 6
-                <input type="radio" name="q3" value="d">d. 9
-            </div>
-            <br>
-            <div class="question">
-                <h1>What is the message written on the snitch Dumbledore gave to Harry?</h1><br>
-                <input type="radio" name="q4" value="a">a. I open at the close.
-                <input type="radio" name="q4" value="b">b. With great power comes great responsibility
-                <input type="radio" name="q4" value="c">c. Death is but the next great adventure.
-                <input type="radio" name="q4" value="d">d. I solemnly swear that I am up to no good.
-            </div>
-            <br>
-            <div class="question">
-                <h1>What is the name of the dark wizard Harry must defeat?</h1><br>
-                <input type="radio" name="q5" value="a">a. Grindelwald
-                <input type="radio" name="q5" value="b">b. Draco Malfoy
-                <input type="radio" name="q5" value="c">c. Sirius Black
-                <input type="radio" name="q5" value="d">d. Voldemort
-            </div>
-            <button type="submit" id="submit-btn">Submit Quiz</button>
-
-
-
-
-
-
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-            <script src="assets\javascript\app.js"></script>
+  </div>
+  ​
+  <!-- jQuery -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- app.js -->
+  <script type="text/javascript" src="assets/javascript/app.js"></script>
+  ​
 </body>
+​
+
 </html>
