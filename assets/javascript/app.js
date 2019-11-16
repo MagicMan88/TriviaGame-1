@@ -33,7 +33,9 @@ var questions = [
     correctAnswer: "Fresh"
   }
 ];
-// Variable that will hold the timer
+
+
+// Timer // Countdown Function
 var timer;
 var game = {
   correct: 0,
@@ -47,9 +49,11 @@ var game = {
       game.done();
     }
   },
+
+  // Start Everything
   start: function() {
     timer = setInterval(game.countdown, 1000);
-    $("#sub-wrapper").prepend(
+    $("#container").prepend(
       "<h2>Time Remaining: <span id='counter-number'>120</span> Seconds</h2>"
     );
     $("#start").remove();
@@ -62,6 +66,8 @@ var game = {
     }
     card.append("<button id='done'>Done</button>");
   },
+
+
   done: function() {
     var inputs = card.children("input:checked");
     for (var i = 0; i < inputs.length; i++) {
@@ -73,15 +79,19 @@ var game = {
     }
     this.result();
   },
+
+  // Results
   result: function() {
     clearInterval(timer);
-    $("#sub-wrapper h2").remove();
+    $("#container h2").remove();
     card.html("<h2>All Done!</h2>");
     card.append("<h3>Correct Answers: " + this.correct + "</h3>");
     card.append("<h3>Incorrect Answers: " + this.incorrect + "</h3>");
   }
 };
-// CLICK EVENTS
+
+
+// ON-CLICK EVENTS// Start and Finish
 $(document).on("click", "#start", function() {
   game.start();
 });

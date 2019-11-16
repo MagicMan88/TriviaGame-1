@@ -3,15 +3,32 @@
 }
 
 body { 
+    font-family: 'Lobster', cursive;
     background: url(../images/books-shelves-architecture-wood-442420.jpeg) no-repeat center center fixed;
     background-size: cover;
     color: white;
   }
 
 h1 {
+    font-size: 80px;
     text-align: center;
+    padding-top: 20px;
 }
 
 #quiz {
     text-align: center;
+    line-height: 200%;
+    line-break: auto;
+}
+
+#sub-wrapper {
+    text-align: center;
+    border: solid 5px black;
+    background: grey;
+    width: 80%;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
