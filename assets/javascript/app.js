@@ -25,12 +25,6 @@ var questions = [
     question: "What is the name of the dark wizard Harry must defeat?",
     answers: ["Grindelwald", "Draco Malfoy", "Sirius Black", "Voldemort"],
     correctAnswer: "Voldemort"
-  },
-  {
-    question:
-      "Finish this line from the Fresh Prince of Bel-Air theme song: 'I whistled for a cab and when it came near, the license plate said...'",
-    answers: ["Dice", "Mirror", "Fresh", "Cab"],
-    correctAnswer: "Fresh"
   }
 ];
 
